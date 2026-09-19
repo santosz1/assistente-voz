@@ -22,7 +22,7 @@ jobs:
 
       - name: Compilar APK
         run: |
-          unzip -q -o AssistenteVozjarvis-apk.zip
+          unzip -q -o AssistenteVoz-jarvis.zip
           FILE=$(find . -name settings.gradle.kts -not -path './.git/*' | head -n 1)
           if [ -z "$FILE" ]; then
             echo "settings.gradle.kts NAO ENCONTRADO. Arquivos no repositorio:"
